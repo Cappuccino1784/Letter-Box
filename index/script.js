@@ -1,4 +1,5 @@
 let container = document.getElementById("container");
+let currentLetter = 0;
 
 const letters = [
     {
@@ -104,45 +105,43 @@ const letters = [
 ];
 
 const passwords = [
-    "1",
-    "2",
-    "1",
-    "2",
-    "1",
-    "2",
-    "1",
-    "2",
-    "1",
-    "2",
-    "1",
-    "2",
-    "1",
-    "2",
-    "1",
-    "2",
-    "1",
-    "2",
-    "1",
-    "2",
-    "1",
-    "2",
-    "1",
-    "2",
-    "1"
+    "<3",
+    "ngu nhu choa",
+    "buon thiu ;-;",
+    "im so sorry bbg",
+    "am am am am am",
+    "chet me mat",
+    "aw tysm",
+    "qua buon",
+    "wife beater",
+    "nha no o dau",
+    "timebomb",
+    "boo",
+    "uot at qua :>",
+    "lam di con gi nua",
+    "cho t lam thong bon cau",
+    "dmmmmmmm ararghar",
+    "brr brr patapim",
+    "co len ganbare",
+    "come to daddy",
+    "i miss u too pooki",
+    "soi guong chua",
+    "ur pregnant",
+    "meomeomeo",
+    "ily",
+    "02032025"
 ]
 
 function createTable() {
     container.innerHTML = `
         <h1 id="title">Letter Box</h1>
         <p id="text"></p>
-        <div id="letter-content"></div>
     `;
 
     let title = document.getElementById("title");
     let text = document.getElementById("text");
-    let content = document.getElementById("letter-content");
 
-    title.innerText = "Letter Box";
+    title.innerText = "Khuê's Letter Box";
     text.style.display = "none";
 
 
@@ -170,22 +169,43 @@ function createTable() {
 
 function loadPage() {
     text.style.display = "block"
+
+    const id = this.id;
+    currentLetter = id;
+    table.innerHTML = '';
+    title.innerHTML = `Letter ${id}`;
+    text.innerText = letters[id-1].instruction;
+
+    //letter
+    let letterBox = document.createElement("div");
+    letterBox.id = "letter-box";
+
+    let letter = document.createElement("img");
+    letter.src = "./images/love-letter.png";
+    letter.id = "letter";
+
+    container.append(letterBox)
+    letterBox.append(letter)
+    letter.addEventListener("click", showPassword)
+
+    //password window
+    let newWindow = document.createElement("div");
+    newWindow.id = ("password-box");
+    letterBox.append(newWindow);
+    newWindow.style.display = "none";
+
+    //exit button
     let exitButton = createButton("exit")
     exitButton.id = "exit";
     exitButton.addEventListener("click", createTable)
     container.append(exitButton);
-
-    const id = this.id;
-    table.innerHTML = ''
-    title.innerHTML = `Letter ${id}`
-    text.innerText = letters[id-1].instruction;
-
 
 
 }
 
 function createButton(id) {
     const newButton = document.createElement("button");
+    newButton.classList.add("button")
     newButton.innerHTML = `
         ${id}
         <div class="star-1">
@@ -306,4 +326,37 @@ function createButton(id) {
     return newButton;
 }
 
+function showPassword() {
+    letter.style.display = "none";
+    document.getElementById("password-box").style.display = "block";
+    document.getElementById("password-box").innerHTML = `   
+        <input placeholder="Password" id="input" type="text">
+        <button id="submit">Submit</button>
+    `
+    document.getElementById("submit").addEventListener("click", checkPassword)
+}
+
+function checkPassword() {
+    let input = document.getElementById("input");
+    let value = input.value
+    if (value === passwords[currentLetter-1]) {
+        input.value = '';
+        input.placeholder = 'CORRECT';
+        reward();
+    } else {
+        input.value = ''
+        input.placeholder = 'WRONG'
+    }
+}
+
+function reward() {
+    document.getElementById("password-box").innerHTML = '';
+    text.style.display = "none"
+    if (currentLetter == 11) {
+        newImg = document.createElement("img")
+        newImg.src = "./images/did u miss me_.png";
+        newImg.id = "music-qr"
+        document.getElementById("password-box").append(newImg)
+    }
+}
 

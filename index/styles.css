@@ -1,6 +1,7 @@
 body {
     padding: 30px;
     background: linear-gradient(to right, #ff9eda, #ffa3fde8, #ff9eda);
+    box-sizing: border-box;
 }
 
 h1 {
@@ -42,6 +43,46 @@ p {
     
 }
 
+#letter-box {
+    background-color: #ffebee;
+    border: 2px dashed #ff9e9e;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(255, 158, 158, 0.3);
+    width: 70%;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#letter {
+    display: block;
+    margin: auto;
+    width: 400px;
+    max-width: 100%;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+#letter:hover {
+    animation: jiggle 0.5s ease infinite;
+}
+
+@keyframes jiggle {
+    0%, 100% { transform: rotate(-1deg); }
+    50% { transform: rotate(1deg); }
+}
+
+#password-box {
+    width: 80%;
+    height: auto;
+    border-radius: 15px;
+    margin: 15px auto;
+    padding: 30px;
+    
+
+}
 
 table {
     margin: 20px auto;
@@ -56,7 +97,7 @@ table {
   }
   
 
-  button {
+  .button {
     min-width: 100px;
     position: relative;
     padding: 0.75em 2em;          /* scales with font size */
@@ -138,13 +179,13 @@ table {
     transition: all 0.8s ease;
   }
   
-  button:hover {
+  .button:hover {
     background: transparent;
     color: #fec195;
     box-shadow: 0 0 25px #fec1958c;
   }
   
-  button:hover .star-1 {
+  .button:hover .star-1 {
     position: absolute;
     top: -80%;
     left: -30%;
@@ -154,7 +195,7 @@ table {
     z-index: 2;
   }
   
-  button:hover .star-2 {
+  .button:hover .star-2 {
     position: absolute;
     top: -25%;
     left: 10%;
@@ -164,7 +205,7 @@ table {
     z-index: 2;
   }
   
-  button:hover .star-3 {
+  .button:hover .star-3 {
     position: absolute;
     top: 55%;
     left: 25%;
@@ -174,7 +215,7 @@ table {
     z-index: 2;
   }
   
-  button:hover .star-4 {
+  .button:hover .star-4 {
     position: absolute;
     top: 30%;
     left: 80%;
@@ -184,7 +225,7 @@ table {
     z-index: 2;
   }
   
-  button:hover .star-5 {
+  .button:hover .star-5 {
     position: absolute;
     top: 25%;
     left: 115%;
@@ -194,7 +235,7 @@ table {
     z-index: 2;
   }
   
-  button:hover .star-6 {
+  .button:hover .star-6 {
     position: absolute;
     top: 5%;
     left: 60%;
@@ -208,5 +249,58 @@ table {
     fill: #fffdef;
   }
   
+ /*form*/
+#input {
+    font-size: 1.5rem;
+    width: 80%;
+    outline: none;
+    padding: 0.2em;
+    border: 1px solid #DAA06D;
+    color: #DAA06D;
+    height: 2em;
+    border-radius: 10px;
+    background-color: #EADDCA;
+    text-align: center;
+    margin: auto;
+}
+
+#submit {
+    width: 60%;
+    align-self: center;
+    margin-top: 2em;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #E5AA70;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    transition: .4s ease-in-out opacity,.1s ease-in-out active;
+    padding: 1em;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+}
   
+#submit:hover {
+    opacity: 0.8;
+}
   
+#submit:active {
+    transform: translateX(0.1em) translateY(0.1em);
+    box-shadow: none;
+}
+
+#music-qr {
+    width: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
