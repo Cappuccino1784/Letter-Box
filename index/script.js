@@ -357,6 +357,9 @@ function reward() {
         newImg.src = "./images/did u miss me_.png";
         newImg.id = "music-qr"
         document.getElementById("password-box").append(newImg)
+    } else if (currentLetter == 1) {
+        window.location.href = "./assets/1/1.html";
     }
+
 }
 
