@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Letter 2</title>
+  <link rel="stylesheet" href="styles2.css" />
+</head>
+<body>
+  <div class="letter-container">
+    <h1>Cô ấy sắp thi nhma não đ có gì</h1>
+    <p>giờ ra thư viện cx ko kịp nên cho m 1 cái đồng hồ 🍅</p>
+    <div id="timer">25:00</div>
+    <div class="buttons">
+        <button class="timer-button" onclick="startTimer()">Start</button>
+        <button class="timer-button" onclick="pauseTimer()">Pause</button>
+        <button class="timer-button" onclick="resetTimer()">Reset</button>
+    </div>
+    
+    <button id="exit" onclick="goHome()">exit</button>
+  </div>
+
+  <audio id="alarm-sound" src="../audio/alarm.mp3" preload="auto" loop></audio>
+  <script src="script2.js"></script>
+</body>
+</html>

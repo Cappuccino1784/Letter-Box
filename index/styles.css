@@ -1,8 +1,11 @@
 body {
     padding: 30px;
-    background: linear-gradient(to right, #ff9eda, #ffa3fde8, #ff9eda);
     box-sizing: border-box;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
 }
+
+
 
 h1 {
     color: #fff;

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Letter 13</title>
+  <link rel="stylesheet" href="styles13.css">
+</head>
+<body>
+  <div class="rain-container">
+    <div class="quote-box">
+      <p id="quote">Ướt át quá</p>
+    </div>
+    
+    
+    <canvas id="rain-canvas"></canvas>
+  </div>
+  <button id="play-sound" onclick="playSound()">bật/tắt tiếng mưa</button>
+  <button id="random" onclick="changeMode()">random</button>
+  <button id="exit" onclick="leave()">exit</button>
+  <audio id="rain-sound" src="../audio/rain.mp3" preload="auto" loop></audio>
+  <script src="script13.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+body {
+    background-color: #dc5555;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .letter-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    max-width: 500px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease;
+  }
+  
+  h1 {
+    color: #e76f51;
+  }
+  
+  #exit {
+    margin-top: 1.5rem;
+    padding: 10px 20px;
+    background-color: #f4a261;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #timer {
+    font-size: 64px;
+    margin-bottom: 20px;
+    color: #003049;
+  }
+  
+  button:hover {
+    background-color: #e76f51;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .timer-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    background-color: #f77f00;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  

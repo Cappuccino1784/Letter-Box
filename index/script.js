@@ -359,6 +359,10 @@ function reward() {
         document.getElementById("password-box").append(newImg)
     } else if (currentLetter == 1) {
         window.location.href = "./assets/1/1.html";
+    } else if (currentLetter == 2) {
+        window.location.href = "./assets/2/2.html";
+    } else if (currentLetter == 13) {
+        window.location.href = "./assets/13/13.html";
     }
 
 }
