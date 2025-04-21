@@ -82,7 +82,8 @@ const quotes = [
 
   function changeQuote() {
     if (random == true) {
-        const quote = quotes[Math.floor(Math.random() * quotes.length)];
+        const random = Math.floor(Math.random() * quotes.length);
+        const quote = `${random+1}. ${quotes[random]}`;
         document.getElementById('quote').innerText = quote
     } else if (random == false) {
         if (count == 15) {

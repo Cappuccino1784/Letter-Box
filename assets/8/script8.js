@@ -35,6 +35,7 @@ function startQuiz() {
   nextButton.innerText = 'Next'
   for (i = 0; i < questions[currentQuestion].options.length; i++) {
     const newOption = createButton(currentQuestion, i, questions[currentQuestion].options[i]);
+    options.app
   }
 
 
