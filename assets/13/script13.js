@@ -86,7 +86,7 @@ const quotes = [
         const quote = `${random+1}. ${quotes[random]}`;
         document.getElementById('quote').innerText = quote
     } else if (random == false) {
-        if (count == 15) {
+        if (count == quotes.length - 1) {
             count = 0;
         }
         const quote = quotes[count];
