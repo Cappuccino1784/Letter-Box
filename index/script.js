@@ -112,7 +112,7 @@ const passwords = [
     "am am am am am",
     "chet me mat",
     "aw tysm",
-    "qua buon",
+    "ko co t thi chan ngay",
     "wife beater",
     "nha no o dau",
     "timebomb",
@@ -357,13 +357,8 @@ function reward() {
         newImg.src = "./images/did u miss me_.png";
         newImg.id = "music-qr"
         document.getElementById("password-box").append(newImg)
-    } else if (currentLetter == 1) {
-        window.location.href = "./assets/1/1.html";
-    } else if (currentLetter == 2) {
-        window.location.href = "./assets/2/2.html";
-    } else if (currentLetter == 13) {
-        window.location.href = "./assets/13/13.html";
-    }
-
+    } else {
+        window.location.href = `./assets/${currentLetter}/${currentLetter}.html`;
+    } 
 }
 
