@@ -59,3 +59,7 @@ body {
   #next-btn:hover {
     background: #555;
   }
+
+  button:disabled {
+    color: rgba(0,0,0,0.8);
+  }

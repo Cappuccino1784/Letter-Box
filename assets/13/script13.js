@@ -61,16 +61,16 @@ const quotes = [
     "Mưa rơi ngoài hiên, còn m thì rơi vào trong tim t oeoeoeoe",
     "Mỗi giọt mưa làm t nhớ đến giọng m gọi am am am am am",
     "Ướt hết áo r, cởi ra cho khô 🥴",
-    "T thích cảm giác đi dưới mưa… vì đang nhớ m",
+    "T thích cảm giác đi dưới mưa… vì đang nhớ m 👉👈",
     "Mở mắt thấy trời mưa, lòng t cũng nặng hạt vì m (┬┬﹏┬┬)",
     "T muốn cùng m trú mưa… rồi chẳng cần mưa tạnh nữa",
     "T muốn đc nắm tay 👉👈",
     "Nghe tiếng mưa, t lại nhớ giọng m",
     "Ước gì lúc này cả 2 cùng đứng dưới mưa, không cần nói gì",
     "Mưa ngoài trời, nhưng m là cơn mưa trong lòng t 🤢🤢🤮🤮 skip skip skip",
-    "Mưa có thể làm lạnh vai m, nhưng không thể làm t thôi muốn ôm m",
+    "Mưa có thể làm lạnh vai m, nhưng không thể làm t thôi muốn ôm m ༼ つ ◕_◕ ༽つ",
     "Mỗi cơn mưa qua, t chỉ mong m vẫn còn ở đây (đừng bỏ t pls)",
-    "T nhớ m, rất nhiều huhuhuhuhu",
+    "T nhớ m, rất nhiều huhuhuhuhu o(TヘTo)",
     "Nhìn vào vũng nước thấy ảnh phản chiếu của 2 đứa 😞😖😩",
     "Trời mưa lạnh, nhưng sao lòng t còn lạnh hơn khi không có m ở đây 🥴🥴🥴",
     "Ước gì mưa này cuốn trôi hết nỗi buồn, nhma đừng cuốn m đi (cuốn m về đây thì được)",
@@ -90,7 +90,7 @@ const quotes = [
             count = 0;
         }
         const quote = quotes[count];
-        document.getElementById('quote').innerText = quote
+        document.getElementById('quote').innerText = `${count + 1}. ${quote}`
         count++;
     }
   }
