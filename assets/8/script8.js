@@ -130,6 +130,18 @@ const questions = [
     comment: ":> flexible ig nhma hướng nội nhiều hơn"
   },
   {
+    question: "AM tuổi gì?",
+    options: ["Chóa arf arf", "Lợn ỉn ỉn", "Gà tok tok", "Đà điểu 🥚"],
+    correct: 0,
+    comment: "đầu chó đuôi lợn"
+  },
+  {
+    question: "Love language của AM là gì?",
+    options: ["Quality time (love being with her)", "Physical touch (imma touch u)", "Gift giving", "Words of affirmaion (i loveeeee)", "Acts of service"],
+    correct: 1,
+    comment: "ewwwwww nắm tay ewwwww"
+  },
+  {
     question: "AM có ny chưa?",
     options: ["Có rồiiiii 😘😘😘", "Still single baby 😥", "Situationship", "đ biết gọi là gì 😔😔😔 (i have feelings for u my nigga)"],
     correct: 3,
