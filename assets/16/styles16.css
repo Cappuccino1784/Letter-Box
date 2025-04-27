@@ -12,24 +12,26 @@ body {
     color: #f3f3f3;
   }
   
-  .gallery {
+  #gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 15px;
+    gap: 30px;
     padding: 20px;
     max-width: 1000px;
     margin: auto;
   }
   
-  .gallery img {
+  #gallery img, #gallery video {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 8px;
+    border: 5px solid whitesmoke;
     cursor: pointer;
     transition: transform 0.3s ease;
+    object-fit: cover;
   }
   
-  .gallery img:hover {
+  #gallery img:hover, #gallery video:hover {
     transform: scale(1.05);
   }
   
@@ -45,7 +47,7 @@ body {
   }
   
   .modal-content {
-    width: 70%;
+    border-radius: 9px;
     margin: auto;
     display: block;
     max-width: 90%;
@@ -53,18 +55,9 @@ body {
   }
   
   .caption {
-    margin: 20px;
+    margin: 20px 100px;
     color: #ccc;
     font-size: 18px;
   }
   
-  .close {
-    position: absolute;
-    top: 30px;
-    right: 40px;
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-  }
   
